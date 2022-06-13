@@ -10,11 +10,12 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark black">
       <div class="container-fluid">
         <a class="navbar-brand" href="#" aria-current="page">This is CS50x</a>
         <button
@@ -37,23 +38,40 @@
             <li class="nav-item">
               <a class="nav-link mx-3" href="#">Puzzle Day</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Weeks
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+            <li class="nav-item">
+                <a class="nav-link mx-3" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample" href="#offcanvasExample">Weeks</a>
               </li>
           </ul>
         </div>
       </div>
     </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Weeks</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <!-- Put week links here -->
+          </div>
+        </div>
+      </div>
     <!-- Header -->
-    <div class="container-fluid bg-dark">
-        <h1 class="display-1 text-center text-white py-5">This is CS50.</h1>
+    <div class="container-fluid black">
+        <h1 class="display-1 text-center text-white py-5"><strong>This is CS50.</strong></h1>
+        <div class="row">
+            <div class="col-6">
+                <a href="mailto:malan@harvard.edu" class="lead text-white"><small>David J. Malan <small><small>@harvard.edu</small></small></small></a>
+            </div>
+            <div class="col-6">
+                <p class="lead text-white text-end" id="link"><small>CS50's Introduction to Computer Science</CS50></p>
+                </div>
+            </div>
+        </div> 
+    <!-- Main page Contents -->
+    <div class="container-fluid my-5 mx-auto">
+        <h2>Welcome</h2>
+        <hr>
     </div>
     <!-- Bootstrap JavaScript -->
     <script
